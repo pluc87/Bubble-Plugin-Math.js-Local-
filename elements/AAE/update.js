@@ -1,7 +1,7 @@
 function(instance, properties, context) {
 
 try {
-var result = math.eval(properties.expression);
+var result = math.evaluate(properties.expression);
 } catch(err) {
   console.log(err.toString());
   instance.triggerEvent('error', function(err) {});
